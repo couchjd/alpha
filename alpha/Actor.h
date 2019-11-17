@@ -15,7 +15,7 @@ public:
 	void attack();
 	sf::Sound _attackSound;
 private:
-
+	float attackCooldown;
 };
 
 

@@ -3,6 +3,7 @@
 
 #include "Command.h"
 #include "MoveCommand.h"
+#include "AttackCommand.h"
 #include "util.h"
 
 class InputHandler {
