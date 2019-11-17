@@ -1,11 +1,11 @@
 ﻿cl : Command line warning D9002: ignoring unknown option '/std:c++17'
+  testing.cpp
+  InputHandler.cpp
   Actor.cpp
   Generating Code...
-  Compiling...
-  testing.cpp
+  Skipping... (no relevant changes detected)
   MoveCommand.cpp
-  InputHandler.cpp
   AttackCommand.cpp
-  Generating Code...
+  LINK : C:\Users\Jeff\documents\visual studio 2015\Projects\alpha\Debug\alpha.exe not found or not built by the last incremental link; performing full link
   alpha.vcxproj -> C:\Users\Jeff\documents\visual studio 2015\Projects\alpha\Debug\alpha.exe
   alpha.vcxproj -> C:\Users\Jeff\documents\visual studio 2015\Projects\alpha\Debug\alpha.pdb (Full PDB)
