@@ -1,0 +1,11 @@
+﻿cl : Command line warning D9002: ignoring unknown option '/std:c++17'
+  Actor.cpp
+  Generating Code...
+  Compiling...
+  testing.cpp
+  MoveCommand.cpp
+  InputHandler.cpp
+  AttackCommand.cpp
+  Generating Code...
+  alpha.vcxproj -> C:\Users\Jeff\documents\visual studio 2015\Projects\alpha\Debug\alpha.exe
+  alpha.vcxproj -> C:\Users\Jeff\documents\visual studio 2015\Projects\alpha\Debug\alpha.pdb (Full PDB)
