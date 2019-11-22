@@ -8,14 +8,18 @@ class Actor {
 public:
 	Actor();
 	Actor(sf::CircleShape shape, sf::Sound attackSound);
-	sf::CircleShape _shape;
+	Actor(sf::Sprite sprite, sf::Sound attackSound);
 
 	void init(sf::CircleShape shape, sf::Sound attackSound);
-
+	void init(sf::Sprite sprite, sf::Sound attackSound);
 	void attack();
+
 	sf::Sound _attackSound;
+	sf::CircleShape _shape;
+	sf::Sprite _sprite;
+
 private:
-	float attackCooldown;
+	float _attackCooldown;
 };
 
 
