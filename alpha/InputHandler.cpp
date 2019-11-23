@@ -7,7 +7,7 @@ InputHandler::InputHandler(){}
 
 Command* InputHandler::handleInput(const float& dt){
 	extern Actor actor;
-	Actor* _actor = &actor;
+	//Actor* _actor = &actor;
 	float x = 0.0f;
 	float y = 0.0f;
 	
@@ -16,6 +16,8 @@ Command* InputHandler::handleInput(const float& dt){
 	if(sf::Keyboard::isKeyPressed(sf::Keyboard::Up)) y -= VELOCITY;
 	if(sf::Keyboard::isKeyPressed(sf::Keyboard::Down)) y += VELOCITY;
 	
-	if(y != 0.0f || x != 0.0f) return new MoveCommand(x * dt, y * dt, _actor);
+	if(sf::Keyboard::isKeyPressed(sf::Keyboard::Space)) return new AttackCommand(&actor);
+
+	if(y != 0.0f || x != 0.0f) return new MoveCommand(x * dt, y * dt, &actor);
 	else return nullptr;
 }

@@ -41,7 +41,6 @@ int main(){
 		Command* command = ih->handleInput(dt);
 		
 		if(command){
-			demoSound.play();
 			command->execute();
 			free(command);
 		}
