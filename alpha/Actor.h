@@ -13,11 +13,12 @@ public:
 	void init(sf::CircleShape shape, sf::Sound attackSound);
 	void init(sf::Sprite sprite, sf::Sound attackSound);
 	void attack();
+	void setSprites(int x, int y);
 
 	sf::Sound _attackSound;
 	sf::CircleShape _shape;
 	sf::Sprite _sprite;
-
+	sf::Sprite _sprites[12];
 private:
 	float _attackCooldown;
 };
