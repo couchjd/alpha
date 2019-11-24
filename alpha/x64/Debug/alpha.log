@@ -1,0 +1,5 @@
+﻿  testing.cpp
+c:\users\couch\documents\programming\game_dev\alpha\alpha\testing.cpp(24): warning C4018: '<': signed/unsigned mismatch
+c:\users\couch\documents\programming\game_dev\alpha\alpha\testing.cpp(25): warning C4018: '<': signed/unsigned mismatch
+  alpha.vcxproj -> C:\Users\couch\Documents\PROGRAMMING\GAME_DEV\alpha\x64\Debug\alpha.exe
+  alpha.vcxproj -> C:\Users\couch\Documents\PROGRAMMING\GAME_DEV\alpha\x64\Debug\alpha.pdb (Full PDB)

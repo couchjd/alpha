@@ -27,3 +27,12 @@ void Actor::init(sf::Sprite sprite, sf::Sound attackSound) {
 void Actor::attack() {
 	_attackSound.play();
 }
+
+void Actor::setSprites(int x, int y) {
+	for(int a = 0; a < 4; a++) {
+		for(int b = 0; b < 3; b++) {
+			_sprites[a+b]
+		}
+	}
+
+}

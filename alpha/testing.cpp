@@ -13,6 +13,21 @@ int main(){
 	extern Actor actor;
 	sf::RenderWindow window(sf::VideoMode(800, 600), "TESTING");
 	
+	sf::Texture spriteSheet;
+	sf::Sprite sprites[12][8];
+
+	if(!spriteSheet.loadFromFile("../Assets/Sprites/1x/chara8.png")) {
+		std::cout << "Failed loading spritesheet!" << std::endl;
+	}
+
+	//SPRITES 24x36
+	for(int y = 0; y < spriteSheet.getSize().y; y += 36){
+		for(int x = 0; x < spriteSheet.getSize().x; x += 26) {
+			sprites[x/26][y/36].setTexture(spriteSheet);
+			sprites[x / 26][y / 36].setTextureRect(sf::IntRect(x, y, 24, 36));
+		}
+	}
+
 	sf::SoundBuffer soundBuffer;
     sf::Sound demoSound;
     
@@ -45,7 +60,8 @@ int main(){
 			free(command);
 		}
 		window.clear();
-		window.draw(actor._shape);
+		//window.draw(actor._shape);
+		window.draw(sprites[6][4]);
 		window.display();
 	}
 	
